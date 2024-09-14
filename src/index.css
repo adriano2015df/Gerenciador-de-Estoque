@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app{
+  background-color: rgb(142, 187, 226);
+  display: flexbox;
+  min-height: 100vh;
+    
+}
