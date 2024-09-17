@@ -2,14 +2,16 @@ import { Link } from "react-router-dom";
 import './header.css'
 export default function Header(){
     return(
+      <header>
+        <div className="logo">
+          <Link>ADR Gerenciamento de Estoque</Link>
+        </div>
         <nav>
-        <div class="header">
-         <h1>ADR STOCK</h1>
-         <div className="links">
-        <a href="">Início</a>
-        <a href="">Itens</a>
-        </div>
-        </div>
-      </nav> 
+          <ul>
+            <li><Link>Home</Link></li>
+            <li><Link>Ítens</Link></li>
+          </ul>
+          </nav>
+      </header>    
     )
 }

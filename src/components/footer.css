@@ -1,0 +1,25 @@
+footer{
+    background-color: #37B7C3;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contact-info, footer .useful-links, footer .social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .useful-links a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 24px;
+}
