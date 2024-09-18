@@ -1,5 +1,5 @@
 
-import useIten from '../../Hooks/useIten'
+import useIten from '../../Hooks/useStock'
 import './home.css'
 
 export default function Home(){

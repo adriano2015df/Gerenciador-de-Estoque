@@ -17,6 +17,11 @@ footer .useful-links a{
     text-decoration: none;
     margin-bottom: 5px;
 }
+.logoPhone{
+    color: blue;
+    margin:0 4px;
+    transform: rotate(120deg);
+}
 
 footer .social-media a {
     color: #fff;

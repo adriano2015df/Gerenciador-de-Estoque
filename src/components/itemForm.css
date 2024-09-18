@@ -1,0 +1,40 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-top: 20px;
+    justify-content: center;
+    padding-bottom: 23px;
+    label{
+        display: block;
+}
+    }
+
+
+
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 800px;
+    margin-bottom: 20px;
+}
+.save{
+    width: 800px;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        width: 100px;
+        height: 2rem;
+        border-radius: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(233, 239, 245);
+        background-color: rgb(63, 207, 111);
+    }
+        
+}

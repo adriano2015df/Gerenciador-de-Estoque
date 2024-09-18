@@ -1,28 +1,28 @@
 
 
 import { createBrowserRouter } from "react-router-dom";
-import Estoque from "./Pages/Estoque/Estoque";
-import Iten from "./Pages/Iten/Iten";
-import RouterLayout from "./components/RouterLayout";
 import Home from "./Pages/Home/Home";
+import List_Item from "./Pages/Item/List_Item";
+import Root_Layout from "./components/Root_Layout";
+import Items_Layout from "./Pages/Item/Items_Layout";
+import Add_Item from "./Pages/Item/Add_Item";
 
 
-const router = createBrowserRouter ([
-    {
-        path: "/",
-        element: <RouterLayout />,
-        children:[{
-            index: true,
-            element:<Home/>
-        },{
-                path: "iten",
-                element: <Iten/>
-            },
-            {
-                path: "estoque",
-                element: <Estoque/>
-            }
-        ]
+const router = createBrowserRouter ([{
+    path:"/",
+    element: <Root_Layout/>,
+    children: [
+        { index: true, element: <Home/> },
+        {
+            path: "itens",
+            element:<Items_Layout/>,
+            children:[
+                {index: true, element: <List_Item/> },
+                {path: "adicionar", element: <Add_Item/> }
+                
+            ]
+        }
+    ]
     }
 ])
 

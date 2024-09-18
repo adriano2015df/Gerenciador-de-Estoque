@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import './header.css'
+import { IoMdHome } from "react-icons/io";
 export default function Header(){
     return(
       <header>
@@ -8,8 +9,8 @@ export default function Header(){
         </div>
         <nav>
           <ul>
-            <li><Link>Home</Link></li>
-            <li><Link>Ítens</Link></li>
+            <li><Link to="/"><IoMdHome /></Link></li>
+            <li><Link to="/itens">Listar Ítens</Link></li>
           </ul>
           </nav>
       </header>    
